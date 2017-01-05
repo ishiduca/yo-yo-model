@@ -1,0 +1,5 @@
+*.swp
+bundle.js
+node_modules
+examples/*/bundle.js
+examples/*/node_modles

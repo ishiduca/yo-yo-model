@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "yo-yoify": "^3.5.0"
+  },
+  "dependencies": {
+    "dom-css": "^2.1.0",
+    "inherits": "^2.0.3"
+  },
+  "scripts": {
+    "build": "browserify ./app.js > ./bundle.js"
+  },
+  "browserify": {
+    "transform": [
+      "yo-yoify"
+    ]
+  }
+}
