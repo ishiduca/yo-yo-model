@@ -58,5 +58,5 @@ Observer.prototype.once = function (sub) {
     sub.apply(null, arguments)
     me.unSubscribe(wrap)
   }
-  this.subscribe(wrap)
+  return this.subscribe(wrap)
 }
