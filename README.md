@@ -64,7 +64,7 @@ user should create a model that extends Model.prototype.
 - `initialState` is the initial state.
 - `state`. should keep it only with reference.
 - `errors`. observer object. has 4 methods - `publish`, `subscribe`, `unSubscribe` and `once`. does publish `error` when an exception occurs internally.
-- `observer`. observer object is used internally to notify the state change of the model. Basically there is no direct touch by the user.
+- `observer`. this is used internally to notify the state change of the model. Basically there is no direct touch by the user.
 
 ### method
 
