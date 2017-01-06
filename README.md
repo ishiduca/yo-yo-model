@@ -68,6 +68,12 @@ user should create a model that extends Model.prototype.
 
 ### method
 
-- `setState` take an argument, `partial state object`. merges partial state with internal state, and model notifies you through the model.observer that it merged.
+- `setState` take an argument, `partialStateObject`. merges partial state with internal state, and model notifies you through the model.observer that it merged.
 
-
+```js
+console.dir(model.state)
+// {a: 1, b: 2}
+model.setState({a: -1, c: 3})
+conosle.dir(model.state)
+// {a: -1, b: 2, c: 3}
+```
